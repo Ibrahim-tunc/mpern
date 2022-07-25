@@ -1,0 +1,35 @@
+POST http://localhost:3030/record
+Content-Type: application/json
+
+{
+    "name":"Halil İbrahim Tunç" ,
+    "id":"1234ibo10",
+    "tasks":"Finish DB migreations"
+}
+###
+
+POST http://localhost:3030/register
+Content-Type: application/json
+
+{
+    "id":"1234ibo10",
+    "password":"1234",
+    "name":"Halil İbrahim Tunç" 
+}
+###
+
+GET http://localhost:3030/employees
+
+###
+
+DELETE http://localhost:3030/deleteemployee/2
+
+
+###
+
+PUT http://localhost:3030/editemployee/1234ibo
+Content-Type: application/json
+
+{
+    "newPassword": "1234"
+}
